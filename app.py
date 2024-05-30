@@ -11,12 +11,12 @@ elif age < 25:
 elif age < 30:
     text="bon à un moment il faut travailler pour vivre et non vivre pour travailler !"
 elif age <70:
-    text = "aller encore un effort"
+    text = "aller encore un effort, faut travailler encore "+str(70-age)+"ans"
 elif age <80:
     text = "un repot bien mérité"
 else :
     text = "félicitation d'être arrivé jusque là !"
 if st.button("synthèse des infos transmises"):
-    st.write("Salut, ",prenom, "tu as ", age, "ans", text)
+    st.write("Salut, ",prenom, "tu as ", age, "ans, ", text)
 else:
     st.write("au revoir")
